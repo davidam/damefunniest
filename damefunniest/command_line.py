@@ -21,8 +21,12 @@
 # the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 # Boston, MA 02110-1301 USA,
 
-from . import joke
+#from markdown import markdown
 
+def joke():
+     return(u'Wenn ist das Nunst\u00fcck git und Slotermeyer?'
+            u'Ja! ... **Beiherhund** das Oder die Flipperwaldt '
+            u'gersput.')
 
 def main():
     print(joke())
