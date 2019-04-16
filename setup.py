@@ -28,7 +28,7 @@ def readme():
         return f.read()
 
 setup(name='damefunniest',
-      version='0.2',
+      version='0.4',
       description='The funniest joke in the world',
       long_description=readme(),
       classifiers=[
@@ -38,7 +38,7 @@ setup(name='damefunniest',
         'Topic :: Text Processing :: Linguistic',
       ],
       keywords='funniest joke comedy flying circus',
-
+      scripts=['damefunniest/bin/funniest-joke'],
       url='http://github.com/davidam/damefunniest',
       author='David Arroyo Menéndez',
       author_email='davidam@gnu.org',
@@ -51,6 +51,6 @@ setup(name='damefunniest',
       tests_require=['nose', 'nose-cover3'],
       entry_points={
           'console_scripts': ['funniest-joke=funniest.command_line:main'],
-      },
+    },
       include_package_data=True,
       zip_safe=False)
